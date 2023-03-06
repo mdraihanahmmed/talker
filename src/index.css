@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.anim {
+  animation: slow 0.4s linear;
+  position: relative;
+}
+
+@keyframes slow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(100%);
+  }
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+.audio-recorder {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 !important;
+  box-sizing: border-box;
+  width: auto !important;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  padding: 0 !important;
+  position: absolute;
+  top: 19px;
+  right: 107px;
+}
+.audio-recorder-options {
+  display: none;
+}
